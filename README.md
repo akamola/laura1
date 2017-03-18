@@ -27,9 +27,9 @@ For the next steps of the Raspberry Pi configuration you need a keyboard and mon
 - Configure the Raspberry Pi with `sudo raspi-config`:
   - For all details [see the documentation](https://www.raspberrypi.org/documentation/linux/usage/users.md)
   - Recommended settings:
+    - Change language, timezone and/or keyboard layout (localisation)
     - Change default password
     - Expand filesystem
-    - Change language, timezone and/or keyboard layout (localisation)
     - Enable SSH (for remote access)
 - Connect the Raspberry Pi via LAN or [setup WiFi](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md)
 
@@ -42,6 +42,7 @@ The Raspberry Pi is now pre-configured and ready to use for _all_ purposes. But 
 - Shutdown the Raspberry Pi: `sudo shutdown -h 0` and remove all cables
 - Put the Dragino LoRa/GPS HAT on the Raspberry Pi
 - Restart the Raspberry Pi (if you have LAN/WiFi and SSH enabled you only need to plug the power cable in)
+- Use `sudo raspi-config` and enable SPI (see point 5: "Interfacing Options") 
 - Install git: `sudo apt-get install git`
 
 Now you have to decide if you want to setup a experimental *Local LoRaWAN Gateway* or a *The Things Network Gateway*.
